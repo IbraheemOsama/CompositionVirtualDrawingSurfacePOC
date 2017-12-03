@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="InfiniteCanvasPOC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:InfiniteCanvasPOC"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border x:ConnectionId='1'
+            x:Name="RootElement"
+            Margin="0,0,0,0"
+            HorizontalAlignment="Stretch" />
+    </Grid>
+</Page>
+

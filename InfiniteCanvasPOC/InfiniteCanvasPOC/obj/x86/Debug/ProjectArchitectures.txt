@@ -1,0 +1,1 @@
+C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\InfiniteCanvasPOC.csproj;x86
