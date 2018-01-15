@@ -14,11 +14,6 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="InfiniteCanvasPOC.InfiniteCanvas" />
     <RootType FullName="InfiniteCanvasPOC.BlankPage1" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Border">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-    </RootType>
-    <RootType FullName="InfiniteCanvasPOC.MainPage" />
     <RootType FullName="Windows.UI.Xaml.ResourceDictionary" />
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Template" />

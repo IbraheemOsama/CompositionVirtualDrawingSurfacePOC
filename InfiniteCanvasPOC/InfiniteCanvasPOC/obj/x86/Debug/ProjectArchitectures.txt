@@ -1,1 +1,1 @@
-C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\InfiniteCanvasPOC.csproj;x86
+C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\InfiniteCanvasPOC.csproj;x86

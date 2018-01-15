@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>bcf57939-f5e4-490c-b99f-8f449c38c851</PackageIdentityName>
     <PackageIdentityPublisher>CN=mityh</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>DFA18A8364C14AD984264BDD0D30A3B32526D94E61409BBD95698FFFCEC857C5</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bcf57939-f5e4-490c-b99f-8f449c38c851_1.0.0.0_x86__hdkws8ncmvvme</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bcf57939-f5e4-490c-b99f-8f449c38c851_hdkws8ncmvvme!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-03T11:59:50.563</Modified>
+      <Modified>2018-01-15T22:45:06.009</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\InfiniteCanvasPOC.exe">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\InfiniteCanvasPOC.exe">
       <PackagePath>entrypoint\InfiniteCanvasPOC.exe</PackagePath>
-      <Modified>2017-12-03T11:59:49.908</Modified>
+      <Modified>2018-01-15T22:45:04.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\mityh\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -503,60 +503,60 @@
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2017-06-25T17:01:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-12-03T03:19:01.687</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-10-31T23:17:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-31T23:17:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-31T23:17:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-31T23:17:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-31T23:17:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-31T23:17:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-31T23:17:16.002</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\InfiniteCanvasPOC.xr.xml">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\InfiniteCanvasPOC.xr.xml">
       <PackagePath>InfiniteCanvasPOC.xr.xml</PackagePath>
-      <Modified>2017-12-03T10:58:42.541</Modified>
+      <Modified>2017-12-07T04:12:05.311</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-06T11:38:18.448</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-03T11:59:50.351</Modified>
+      <Modified>2018-01-15T22:45:05.654</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\mityh\Documents\Visual Studio 2017\Projects\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\Core\InfiniteCanvasPOC.exe">
+    <AppxPackagedFile Include="C:\Users\mityh\Documents\GitHub\CompositionVirtualDrawingSurfacePOC\InfiniteCanvasPOC\InfiniteCanvasPOC\bin\x86\Debug\Core\InfiniteCanvasPOC.exe">
       <PackagePath>InfiniteCanvasPOC.exe</PackagePath>
-      <Modified>2017-12-03T11:59:50.560</Modified>
+      <Modified>2018-01-15T22:45:05.998</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Numerics;
 using Windows.Foundation;
+using System.Linq;
 using Windows.Graphics;
 using Windows.Graphics.DirectX;
 using Windows.UI;
@@ -68,7 +69,7 @@ namespace InfiniteCanvasPOC
                 _inkManager.AddStroke(s);
             }
 
-            _canvasOne.DrawLine(args.Strokes);
+            //_canvasOne.DrawLine(args.Strokes);
         }
     }
 
@@ -101,6 +102,14 @@ namespace InfiniteCanvasPOC
             this.SizeChanged += TheSurface_SizeChanged;
             this.PointerPressed += InfiniteCanvas_PointerPressed;
             Window.Current.CoreWindow.PointerPressed += CoreWindow_PointerPressed;
+            Window.Current.CoreWindow.KeyDown += CoreWindow_KeyDown; ;
+        }
+
+        private void CoreWindow_KeyDown(CoreWindow sender, KeyEventArgs args)
+        {
+            var key = args.VirtualKey.ToString();
+            args.Handled = true;
+            DrawString(key);
         }
 
         private void CoreWindow_PointerPressed(CoreWindow sender, PointerEventArgs args)
@@ -266,8 +275,11 @@ namespace InfiniteCanvasPOC
 
         }
 
+        List<InkStroke> list = new List<InkStroke>();
+
         public void DrawLine(IReadOnlyList<InkStroke> inkes)
         {
+            list.AddRange(inkes);
             // cropping part of screen
             //using (var drawingSession = CanvasComposition.CreateDrawingSession(drawingSurface,new Rect(0,0,150,150)))
             //{
@@ -276,10 +288,55 @@ namespace InfiniteCanvasPOC
             //}
 
             // full screen but only record the last element as every time we draw it clear the old drawings
-            using (var drawingSession = CanvasComposition.CreateDrawingSession(drawingSurface, new Rect(0, 0, ActualWidth, ActualHeight)))
+            using (
+                var drawingSession = CanvasComposition.CreateDrawingSession(drawingSurface,
+                    new Rect(0, 0, ActualWidth, ActualHeight)))
             {
-                drawingSession.Blend = CanvasBlend.SourceOver;
-                drawingSession.DrawInk(inkes);
+                CanvasTextFormat tf = new CanvasTextFormat() { FontSize = 72 };
+                //drawingSession.DrawText($"hopa", 50, 50, Colors.Green, tf);
+
+                float xLoc = 100.0f;
+                float yLoc = 100.0f;
+                CanvasTextFormat format = new CanvasTextFormat
+                {
+                    FontSize = 30.0f,
+                    WordWrapping = CanvasWordWrapping.NoWrap
+                };
+                CanvasTextLayout textLayout = new CanvasTextLayout(drawingSession, "Hello World!", format, 0.0f, 0.0f);
+                Rect theRectYouAreLookingFor = new Rect(xLoc + textLayout.DrawBounds.X, yLoc + textLayout.DrawBounds.Y,
+                    textLayout.DrawBounds.Width, textLayout.DrawBounds.Height);
+                drawingSession.DrawRectangle(theRectYouAreLookingFor, Colors.Green, 1.0f);
+                drawingSession.DrawTextLayout(textLayout, xLoc, yLoc, Colors.Yellow);
+
+                drawingSession.DrawInk(list);
+            }
+        }
+
+        private string sofar = string.Empty;
+        public void DrawString(string c)
+        {
+            sofar += c;
+            using (
+                var drawingSession = CanvasComposition.CreateDrawingSession(drawingSurface,
+                    new Rect(0, 0, ActualWidth, ActualHeight)))
+            {
+                CanvasTextFormat tf = new CanvasTextFormat() { FontSize = 72 };
+
+                float xLoc = 100.0f;
+                float yLoc = 100.0f;
+                CanvasTextFormat format = new CanvasTextFormat
+                {
+                    FontSize = 30.0f,
+                    WordWrapping = CanvasWordWrapping.NoWrap
+                };
+                CanvasTextLayout textLayout = new CanvasTextLayout(drawingSession, sofar, format, 0.0f,
+                    0.0f);
+                Rect theRectYouAreLookingFor = new Rect(xLoc + textLayout.DrawBounds.X,
+                    yLoc + textLayout.DrawBounds.Y, textLayout.DrawBounds.Width, textLayout.DrawBounds.Height);
+                drawingSession.DrawRectangle(theRectYouAreLookingFor, Colors.Green, 1.0f);
+                drawingSession.DrawTextLayout(textLayout, xLoc, yLoc, Colors.Yellow);
+
+                drawingSession.DrawInk(list);
             }
         }
     }

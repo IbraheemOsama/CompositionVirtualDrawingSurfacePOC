@@ -25848,11 +25848,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mityh\\Documents\\Visual Studio 2017\\Projects\\InfiniteCanvasPOC\\InfiniteCanvasPOC\\InfiniteCanvasPOC.csproj",
+      "projectUniqueName": "C:\\Users\\mityh\\Documents\\GitHub\\CompositionVirtualDrawingSurfacePOC\\InfiniteCanvasPOC\\InfiniteCanvasPOC\\InfiniteCanvasPOC.csproj",
       "projectName": "InfiniteCanvasPOC",
-      "projectPath": "C:\\Users\\mityh\\Documents\\Visual Studio 2017\\Projects\\InfiniteCanvasPOC\\InfiniteCanvasPOC\\InfiniteCanvasPOC.csproj",
+      "projectPath": "C:\\Users\\mityh\\Documents\\GitHub\\CompositionVirtualDrawingSurfacePOC\\InfiniteCanvasPOC\\InfiniteCanvasPOC\\InfiniteCanvasPOC.csproj",
       "packagesPath": "C:\\Users\\mityh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mityh\\Documents\\Visual Studio 2017\\Projects\\InfiniteCanvasPOC\\InfiniteCanvasPOC\\obj\\",
+      "outputPath": "C:\\Users\\mityh\\Documents\\GitHub\\CompositionVirtualDrawingSurfacePOC\\InfiniteCanvasPOC\\InfiniteCanvasPOC\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

@@ -132,27 +132,25 @@ namespace InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
+            _typeNameTable = new string[8];
             _typeNameTable[0] = "InfiniteCanvasPOC.InfiniteCanvas";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Control";
             _typeNameTable[2] = "InfiniteCanvasPOC.BlankPage1";
             _typeNameTable[3] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[4] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[5] = "InfiniteCanvasPOC.MainPage";
-            _typeNameTable[6] = "InfiniteCanvasPOC.InfiniteCanvasOne";
-            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Canvas";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[5] = "InfiniteCanvasPOC.InfiniteCanvasOne";
+            _typeNameTable[6] = "Windows.UI.Xaml.Controls.Canvas";
+            _typeNameTable[7] = "Windows.UI.Xaml.Controls.Panel";
 
-            _typeTable = new global::System.Type[9];
+            _typeTable = new global::System.Type[8];
             _typeTable[0] = typeof(global::InfiniteCanvasPOC.InfiniteCanvas);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Control);
             _typeTable[2] = typeof(global::InfiniteCanvasPOC.BlankPage1);
             _typeTable[3] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[5] = typeof(global::InfiniteCanvasPOC.MainPage);
-            _typeTable[6] = typeof(global::InfiniteCanvasPOC.InfiniteCanvasOne);
-            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Canvas);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[5] = typeof(global::InfiniteCanvasPOC.InfiniteCanvasOne);
+            _typeTable[6] = typeof(global::Windows.UI.Xaml.Controls.Canvas);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.Controls.Panel);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -189,8 +187,7 @@ namespace InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo
 
         private object Activate_0_InfiniteCanvas() { return new global::InfiniteCanvasPOC.InfiniteCanvas(); }
         private object Activate_2_BlankPage1() { return new global::InfiniteCanvasPOC.BlankPage1(); }
-        private object Activate_5_MainPage() { return new global::InfiniteCanvasPOC.MainPage(); }
-        private object Activate_6_InfiniteCanvasOne() { return new global::InfiniteCanvasPOC.InfiniteCanvasOne(); }
+        private object Activate_5_InfiniteCanvasOne() { return new global::InfiniteCanvasPOC.InfiniteCanvasOne(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -228,25 +225,18 @@ namespace InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo
                 xamlType = new global::InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 5:   //  InfiniteCanvasPOC.MainPage
-                userType = new global::InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  InfiniteCanvasPOC.InfiniteCanvasOne
+            case 5:   //  InfiniteCanvasPOC.InfiniteCanvasOne
                 userType = new global::InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Canvas"));
-                userType.Activator = Activate_6_InfiniteCanvasOne;
+                userType.Activator = Activate_5_InfiniteCanvasOne;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  Windows.UI.Xaml.Controls.Canvas
+            case 6:   //  Windows.UI.Xaml.Controls.Canvas
                 xamlType = new global::InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Windows.UI.Xaml.Controls.Panel
+            case 7:   //  Windows.UI.Xaml.Controls.Panel
                 xamlType = new global::InfiniteCanvasPOC.InfiniteCanvasPOC_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
